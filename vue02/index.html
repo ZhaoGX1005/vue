@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+  </div>
+  <button id="app1" @click = "doIt" >  clike me!!</button>
+
+  </div>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!!!'
+      }
+    })
+    var app1 = new Vue({
+        el:'#app1',
+        methods: {
+            doIt:function(){
+                alert("ceshiVue001")  
+            }
+        },
+    })
+  </script>
+</body>
+</html>
