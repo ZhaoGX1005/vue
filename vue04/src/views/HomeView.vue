@@ -1,7 +1,7 @@
 <template>
   <el-container style="height: 100%">
     <el-aside width="auto">
-      <common-aside />
+      <common-aside></common-aside>
     </el-aside>
     <el-container>
       <el-header>Header</el-header>
@@ -15,6 +15,7 @@
 import CommonAside from '../components/CommonAside.vue'
 
 export default {
+  components: { CommonAside },
   comments: {
     CommonAside
   }
@@ -27,5 +28,8 @@ export default {
 }
 .el-main{
   padding-top: 0;
+}
+.el-side {
+  padding: 0;
 }
 </style>
